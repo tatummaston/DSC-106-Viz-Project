@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Air Quality</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="cal-heatmap-master/cal-heatmap.css" />
+  <link rel="stylesheet" href="mycss.css" />
+  <script type="text/javascript" src="cal-heatmap-master/cal-heatmap.min.js"></script>
+  
+
+
+
+</head>
+
+<body>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    
+
+    <main class="scroll-container">
+        <section style="background-image: url('vehicles-air-pollution.jpg');"no-repeat center center fixed>
+            <h2>LA has the worst air quality in the United States. Why?</h2>
+            <h3>A brief inquiry by Tatum Maston</h3>
+        </section>
+        <section >
+            <div>
+                <h2>The pandemic has provided us with a unique natural experiment:</h2>
+                <h2>If you cease normal human activity, how much cleaner would the air be?</h2> 
+            </div>
+            
+            <div id="cal-heatmap"></div> 
+            <h3>The answer: Much clearer.</h3> 
+        </section>
+        <section>
+            <div>
+                <h2>As seen here, transportation is the largest contributor to greenhouse gas emissions</h2>
+                <h2>from the United States as a whole.</h2>
+            </div>
+           <div id="container"></div>
+    
+        </section>
+        <section >
+            <div>
+                <h2>Which equates to</h2>
+                <h1>142.71 billion</h1>
+                <h2>gallons of gas a year</h2>
+            </div>
+        </section>
+        <section >
+            <h2>And driving, solo and not, is the overwhelmingly the largest method of commuting in LA</h2>
+            <div id="pie-container"></div>
+
+        </section>
+        <section>
+            <div>
+                <h2>Although LA is more populus than all of these cities except New York, it has the</h2>
+                <h2>lowest amount of public transportation users.</h2>
+            </div>
+            <div id="bar-container"></div>
+            <div>
+                <h3>This can be due to its large city area, as seen in the graph. Because LA is so spread</h3>
+                <h3>out, public transportation methods are not comprehensive or effecient enough for people to ditch driving.<h3>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3>As I don't forsee the public transportation issue being dramatically fixed anytime soon,</h3>
+                <h3>we can only hope that the post-pandemic world will create an opportunity for the world to recover, as the amount of remote job positions have skyrocketed.</h3>
+            </div>
+            <div id="line-container"></div>
+
+        </section>
+
+
+      </main>
+    
+    
+       
+  
+
+
+    <script type="text/javascript" src="myscript.js"></script>
+  
+</body>
+</html>
