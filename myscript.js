@@ -1,5 +1,8 @@
 var cal = new CalHeatMap();
 cal.init({
+    label: {
+        height:30
+    },
     itemSelector: "#cal-heatmap",
     domain: "month",
     subDomain: "day",
@@ -14,6 +17,8 @@ cal.init({
     legendCellSize: 20,
     legendColors: ["#92C95B","#A22828"],
     legend: [31,40,50],
+    itemName: ["AQI"],
+    
 })
 
 Highcharts.chart('container', {
@@ -43,7 +48,14 @@ Highcharts.chart('container', {
           enabled: true,
           format: '<b>{point.name}</b>: {point.percentage:.1f} %'
         }
-      }
+      },
+        series:{
+            dataLabels:{
+                style: {
+                    fontSize: "18px",
+                }
+            }
+        }
     },
     series: [{
       name: 'Sector',

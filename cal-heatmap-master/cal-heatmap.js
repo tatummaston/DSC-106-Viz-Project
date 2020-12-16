@@ -186,7 +186,7 @@ var CalHeatMap = function() {
 		// ================================================
 
 		// Name of the items to represent in the calendar
-		itemName: ["item", "items"],
+		itemName: ["item"],
 
 		// Formatting of the domain label
 		// @default: null, will use the formatting according to domain type
@@ -1309,39 +1309,39 @@ CalHeatMap.prototype = {
 		 * @param  {string|array} value Date to convert
 		 * @return {array}       An array like [singular-form, plural-form]
 		 */
-		function expandItemName(value) {
-			if (typeof value === "string") {
-				return [value, value + (value !== "" ? "s" : "")];
-			}
+		// function expandItemName(value) {
+		// 	// if (typeof value === "string") {
+		// 	// 	return [value, value + (value !== "" ? "s" : "")];
+		// 	// }
 
-			if (Array.isArray(value)) {
-				if (value.length === 1) {
-					return [value[0], value[0] + "s"];
-				} else if (value.length > 2) {
-					return value.slice(0, 2);
-				}
+		// 	// if (Array.isArray(value)) {
+		// 	// 	// if (value.length === 1) {
+		// 	// 	// 	return [value[0], value[0] + "s"];
+		// 	// 	} else if (value.length > 2) {
+		// 	// 		return value.slice(0, 2);
+		// 	// 	}
 
-				return value;
-			}
+		// 	// 	return value;
+		// 	// }
 
-			return ["item", "items"];
-		}
+		// 	return ["AQI", "AQI"];
+		// }
 
-		function parseColLimit(value) {
-			return value > 0 ? value : null;
-		}
+	// 	function parseColLimit(value) {
+	// 		return value > 0 ? value : null;
+	// 	}
 
-		function parseRowLimit(value) {
-			if (value > 0 && options.colLimit > 0) {
-				console.log("colLimit and rowLimit are mutually exclusive, rowLimit will be ignored");
-				return null;
-			}
-			return value > 0 ? value : null;
-		}
+	// 	function parseRowLimit(value) {
+	// 		if (value > 0 && options.colLimit > 0) {
+	// 			console.log("colLimit and rowLimit are mutually exclusive, rowLimit will be ignored");
+	// 			return null;
+	// 		}
+	// 		return value > 0 ? value : null;
+	// 	}
 
-		return this._init();
+	// 	return this._init();
 
-	},
+	// },
 
 	/**
 	 * Convert a keyword or an array of keyword/date to an array of date objects
