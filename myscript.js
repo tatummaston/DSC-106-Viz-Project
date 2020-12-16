@@ -254,6 +254,6 @@ Highcharts.chart('pie-container', {
     },
     series: [{
         name: 'Tokyo',
-        data: [27, 26, 26, 27, 25, 27, 4, 27, 28, 29, 3, 56]
+        data: [27, 26, 26, 27, 25, 27, 41, 27, 28, 29, 36, 56]
     }]
 });
