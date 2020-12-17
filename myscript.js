@@ -151,7 +151,7 @@ Highcharts.chart('container', {
         name: 'Percent Commuters',
         type: 'column',
         yAxis: 1,
-        data: [55,36,33,31,27,11],
+        data: [55,36,33,31,27,7.8],
 
     }, {
         name: 'City Land Area',
